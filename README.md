@@ -51,16 +51,17 @@ Everything is plain Markdown. Your notes are yours, not locked in some app.
 
 Just talk to Claude. It figures out what you want. Or use slash commands if you're that kind of person:
 
-| Command              | What it does                                                |
-| -------------------- | ----------------------------------------------------------- |
-| `/ask <question>`    | **Q&A** — ask anything, get an answer, findings saved       |
-|                      |                                                             |
-| `/deep-plan`         | **Deep research step 1** — turns your inbox into plans      |
-| `/deep-research`     | **Deep research step 2** — runs the actual research         |
-| `/deep-suggest`      | **Deep research bonus** — suggests follow-up directions     |
-|                      |                                                             |
-| `/dump`              | **Thoughts** — enhances with tags and wikilinks             |
-| `/todo [task]`       | **Todo** — add, check off, or list tasks                    |
+| Command           | What it does                                            |
+| ----------------- | ------------------------------------------------------- |
+| `/dump`           | **Thoughts** — enhances with tags and wikilinks         |
+|                   |                                                         |
+| `/ask <question>` | **Q&A** — ask anything, get an answer, findings saved   |
+|                   |                                                         |
+| `/deep-plan`      | **Deep research step 1** — turns your inbox into plans  |
+| `/deep-research`  | **Deep research step 2** — runs the actual research     |
+| `/deep-suggest`   | **Deep research bonus** — suggests follow-up directions |
+|                   |                                                         |
+| `/todo [task]`    | **Todo** — add, check off, or list tasks                |
 
 `/ask` is for quick, one-off questions. The `/deep-plan` + `/deep-research` combo is for when you want to queue up topics and batch-research them later.
 

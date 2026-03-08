@@ -1,0 +1,13 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/hotkeys.json
+.obsidian/cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Trash
+.trash/

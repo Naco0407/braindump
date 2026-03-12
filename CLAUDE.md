@@ -22,17 +22,24 @@ Claude Code automates research workflows: planning, execution, and organization.
 
 ## Workflows
 
-### Deep Research Workflow
-1. `/deep-memo <words>` — Claude adds topic words to `Inbox.md`, commits to main and pushes
-2. `/deep-plan` — Claude creates structured research plans, commits to main and pushes
-3. `/deep-research` — Execute research for planned topics, commits to main and pushes
-4. `/deep-suggest` — Claude suggests follow-up research directions (read-only, no commits)
+### Natural Input (no slash command needed)
+When the user sends a word or short phrase without a slash command:
 
-### Quick Q&A
-1. `/ask <question>` — Ask anything, get an answer, findings auto-saved to the vault
-   - Searches existing vault for context, uses web if needed
-   - Creates notes and references in the appropriate topic folder
-   - Commits to main and pushes (no PR overhead)
+**単語だけの場合** (e.g., "LLM", "量子コンピュータ", "RAG"):
+1. 意味を簡潔に説明する（会話で直接回答）
+2. 既存Topicsに該当フォルダがあればそこにノートを追加、なければ新規トピックを作成
+3. `Topics/<topic>/notes/` に簡潔なノート（概要・定義レベル）を作成
+4. `status: active` でトピックを作成/更新
+5. Commit & push (`Quick note: <topic>`)
+
+**「単語＋詳しく」の場合** (e.g., "LLM 詳しく", "量子コンピュータについて詳しく知りたい"):
+- `/deep-plan` と同じ動作を実行する（研究計画を作成、`status: planned`）
+- Inbox.mdは経由しない — 直接トピックフォルダと研究計画を作成する
+
+### Deep Research Workflow
+1. `/deep-plan <topics>` — Claude creates structured research plans, commits to main and pushes
+2. `/deep-research` — Execute research for planned topics, commits to main and pushes
+3. `/deep-suggest` — Claude suggests follow-up research directions (read-only, no commits)
 
 ### Thoughts Workflow
 1. User drops random thoughts in `Thoughts/` (freeform markdown)
@@ -64,9 +71,7 @@ Claude Code automates research workflows: planning, execution, and organization.
 - Thoughts files should be left as-is; only enhance, never rewrite
 
 ## Claude Code Skills
-- `/ask <question>` — Quick Q&A — ask anything, findings saved to vault
-- `/deep-memo <words>` — Add topic words to Inbox.md for later research
-- `/deep-plan [topics]` — Create research plans from Inbox.md or from arguments
+- `/deep-plan <topics>` — Create research plans (直接引数 or Inbox.md から)
 - `/deep-research [topics]` — Execute research for planned topics
 - `/deep-suggest [topics]` — Suggest additional research directions
 - `/dump [files]` — Organize thoughts with vault context

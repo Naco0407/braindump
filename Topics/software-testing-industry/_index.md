@@ -1,10 +1,10 @@
 ---
 title: "ソフトウェアテスト業界"
 created: "2026-03-30"
-status: planned
+status: active
 tags:
   - topic/software-testing-industry
-  - status/planned
+  - status/active
 ---
 
 # ソフトウェアテスト業界
@@ -52,9 +52,57 @@ tags:
 - [ ] テスト業界の今後5〜10年のシナリオはどのようなものか？
 
 ## Findings
-<!-- 調査後に記入 -->
+
+### 市場・業界構造
+- グローバル市場規模はUSD 55.8億（2024年）→ USD 112.5億（2034年予測）、CAGR 7.2%
+- 自動化テストが最大セグメント（市場シェア約53%）、セキュリティテストがCAGR 14.83%で最速成長
+- 市場は高度に分散——Accentureが11.5%で首位、上位5社合計でも26%
+- 上位5社: Accenture、Cognizant、IBM、TCS、NTT Data
+
+### ビジネスモデル・サービス内容
+- SES/人月型が日本では主流だがコモディティ化が進む。外部委託エンジニア年間コストは$20,000〜$37,000（国内の約1/5）
+- クラウドソーシング型テスト市場はUSD 31.8億（2024）→ USD 62.5億（2030）、CAGR 12.2%
+- SaaS型（Mabl、Testim、Applitools等）はAIによるセルフヒーリングが差別化軸
+- Sogeti（Capgemini）はTMap®/TPI®メソドロジー保有で17,000人規模のQAコンサルティング
+
+### 日本市場の特性
+- SHIFT株式会社がFY2023に880億円売上で国内上場テスト専業最大手。CAT適性検査（合格率6.4%）で人材品質を担保
+- 日本のテスト市場はSHIFT推計で約5.5兆円（開発全体の33%相当）
+- SIerの一括請負文化がテストを「後工程・下請け」として低く評価する構造的問題
+- JSTQB資格はISTQBと相互認証し、IPAのITSSフレームワークに組み込まれた国際資格
+
+### 海外市場
+- インドGCCからのテストサービス輸出はFY2024-25に80億ドル超
+- TCS/Infosys/Wiproはそれぞれ独自のAI-powered QAプラットフォームを保有
+- 欧米でのAI採用率77.7%（AI-first QE）——内製化とアウトソースが並立
+- Crowd testingはApplauseなど大規模プラットフォームが成功、小規模モデル（Rainforest QA等）は競争激化
+
+### AI・自動化による変革
+- LLMはテスト自動化の「第三波」をもたらし、スクリプトメンテナンスコストを最大70%削減
+- テストケースをPRDから自動生成するLLM活用が60%以上のエンタープライズで展開/パイロット中
+- テストエンジニアは「スクリプター」から「品質戦略家（QE）」へシフト、AI専門性で+20〜40%プレミアム
+- 2026年：アジェンティックAI（Devin等）による多段階自律テストが実用化フェーズに入る
+
+### 業界の課題と未来
+- コモディティ回帰テストは価格侵食・AI代替が進み、ドメイン特化型が生き残る
+- 「品質保証（QA）」から「品質エンジニアリング（QE）」への概念シフトが進行中（採用率77.7%）
+- テスト専業会社の構造的課題: スキル高度化・人材確保・単価競争・AI対応の4重課題
+
+## Notes
+
+- [[market-structure]] — 市場規模・セグメント・主要プレイヤー
+- [[business-models]] — ビジネスモデル・SaaS・crowd testing
+- [[japan-market]] — 日本市場の特性・主要企業・SIer文化・資格制度
+- [[global-players]] — 海外主要企業・インドオフショア・内製化トレンド
+- [[ai-automation]] — AI/LLMによる変革・自動化ツール普及の影響
 
 ## Related Topics
 
 ## Resources
-<!-- 調査後に記入 -->
+
+- [[gminsights-software-testing-market]] — グローバル市場レポート
+- [[grandviewresearch-crowdsourced-testing]] — Crowd testing市場レポート
+- [[shift-inc-about-testing]] — SHIFT Inc.公式サービス概要
+- [[testlio-software-testing-companies]] — グローバルトップ10企業
+- [[cloudqa-llms-reshaping-qa]] — LLMによるQA変革
+- [[thinksys-qa-trends-2026]] — 2026年QAトレンドレポート

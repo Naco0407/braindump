@@ -9,6 +9,7 @@ Claude Code automates research workflows: planning, execution, and organization.
 /
 ├── Inbox.md          # Add topic words here (one per line) — Claude turns them into research plans
 ├── Thoughts/         # Random thoughts — Claude organizes without destroying
+├── Q&A/              # Quick Q&A results saved by /ask
 ├── Topics/           # One folder per research topic
 │   └── <topic>/
 │       ├── _index.md        # Topic overview, status, key questions
@@ -58,6 +59,7 @@ When the user sends a word or short phrase without a slash command:
   - `#thought` — random thought
   - `#thought/<theme>` — themed thought
   - `#reference` — reference/source file
+  - `#qa` — Q&A entry saved by /ask
 - Topic folder names: lowercase, hyphens for spaces (e.g., `machine-learning`)
 - Note filenames: descriptive, lowercase, hyphens (e.g., `transformer-architecture.md`)
 
@@ -74,6 +76,7 @@ When the user sends a word or short phrase without a slash command:
 - Thoughts files should be left as-is; only enhance, never rewrite
 
 ## Claude Code Skills
+- `/ask <question>` — Quick Q&A: web research + save result to `Q&A/`
 - `/deep-plan <topics>` — Create research plans (直接引数 or Inbox.md から)
 - `/deep-research [topics]` — Execute research for planned topics
 - `/deep-suggest [topics]` — Suggest additional research directions

@@ -17,6 +17,11 @@ Claude Code automates research workflows: planning, execution, and organization.
 ├── Templates/        # Obsidian templates for consistent formatting
 ├── Maps/             # Maps of Content (MOCs) linking related topics
 ├── Archive/          # Completed or paused research
+├── terrarium/        # Research Explorer — React + Three.js visualization app
+│   ├── src/
+│   │   ├── components/   # Globe, NetworkGraph, Bookshelf, Timeline
+│   │   └── data/         # Sample data (markers, nodes, books, events)
+│   └── package.json
 └── .claude/skills/  # Claude Code skills for automation
 ```
 

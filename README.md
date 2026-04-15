@@ -12,7 +12,7 @@ A personal knowledge base powered by [Obsidian](https://obsidian.md) and [Claude
 
 ### 1. Brain Dump (literally)
 
-Scribble anything into `Thoughts/`. Half-baked ideas, shower thoughts. Even such ideas can be digested by Claude and can turn into gold.
+Scribble anything into `Self/thoughts/`. Half-baked ideas, shower thoughts. Even such ideas can be digested by Claude and can turn into gold. Record experiences in `Self/journal/`, core beliefs in `Self/values/`, and important decisions in `Self/decisions/` — the raw material for your digital self.
 
 ### 2. Quick Q&A
 
@@ -81,7 +81,11 @@ Works on desktop Claude Code CLI or Claude Code on Web (also available on mobile
 ```
 ├── Inbox.md              # Drop topic words here, one per line
 ├── Home.md               # Dashboard with Dataview queries
-├── Thoughts/             # Freeform thoughts — write anything
+├── Self/                 # Personal inner world — digital clone source material
+│   ├── thoughts/         # Freeform thoughts — write anything
+│   ├── journal/          # Experiences, events, daily reflections
+│   ├── values/           # Core beliefs and principles
+│   └── decisions/        # Important decisions and their reasoning
 ├── Topics/               # Research output, one folder per topic
 │   └── <topic-name>/
 │       ├── _index.md     # Overview, status, key questions
@@ -130,7 +134,9 @@ Obsidian is for browsing and reading. Claude Code handles note creation and orga
 - All files are Markdown with YAML frontmatter
 - Internal links use `[[wikilinks]]`
 - Folder and file names are lowercase with hyphens (`quantum-computing`, `error-correction.md`)
-- Thoughts are never rewritten — only enhanced with tags and links
+- `Self/thoughts/` files are never rewritten — only enhanced with tags and links
+- `Self/journal/` files may receive frontmatter and links, content is never rewritten
+- `Self/values/` and `Self/decisions/` are intentional entries — Claude does not auto-modify
 
 ## Branch Strategy
 

@@ -8,7 +8,11 @@ Claude Code automates research workflows: planning, execution, and organization.
 ```
 /
 ├── Inbox.md          # Add topic words here (one per line) — Claude turns them into research plans
-├── Thoughts/         # Random thoughts — Claude organizes without destroying
+├── Self/             # Personal inner world — thoughts, experiences, values, decisions
+│   ├── thoughts/     # Random thoughts — Claude organizes without destroying
+│   ├── journal/      # Experiences, events, daily reflections
+│   ├── values/       # Core beliefs, principles, judgment criteria
+│   └── decisions/    # Important decisions and their reasoning
 ├── Q&A/              # Quick Q&A results saved by /ask
 ├── Topics/           # One folder per research topic
 │   └── <topic>/
@@ -42,9 +46,11 @@ When the user sends a word or short phrase without a slash command:
 2. `/deep-research` — Execute research for planned topics, commits to main and pushes
 3. `/deep-suggest` — Claude suggests follow-up research directions (read-only, no commits)
 
-### Thoughts Workflow
-1. User drops random thoughts in `Thoughts/` (freeform markdown)
-2. `/dump` — Claude adds tags, wikilinks, and connections without modifying original content, commits to main and pushes
+### Self Workflow
+- `Self/thoughts/` — Random thoughts (freeform markdown). `/dump` adds tags, wikilinks, and connections without modifying original content.
+- `Self/journal/` — Experiences, events, daily reflections. Write freely; Claude can enhance with frontmatter and links.
+- `Self/values/` — Core beliefs and principles. Intentional entries; Claude does not auto-modify.
+- `Self/decisions/` — Important decisions with context and reasoning. Intentional entries; Claude does not auto-modify.
 
 ## Conventions
 - All files are Markdown (.md), compatible with Obsidian
@@ -58,6 +64,10 @@ When the user sends a word or short phrase without a slash command:
   - `#status/done` — research completed
   - `#thought` — random thought
   - `#thought/<theme>` — themed thought
+  - `#journal` — experience or event record
+  - `#journal/<theme>` — themed journal entry
+  - `#values` — core belief or principle
+  - `#decision` — important decision record
   - `#reference` — reference/source file
   - `#qa` — Q&A entry saved by /ask
 - Topic folder names: lowercase, hyphens for spaces (e.g., `machine-learning`)
@@ -73,7 +83,9 @@ When the user sends a word or short phrase without a slash command:
 - Link related notes using `[[wikilinks]]`
 - Prefer updating existing notes over creating duplicates
 - Inbox.md lines can be minimal — just a word or phrase is fine
-- Thoughts files should be left as-is; only enhance, never rewrite
+- `Self/thoughts/` files should be left as-is; only enhance, never rewrite
+- `Self/journal/` files: enhance with frontmatter and links, never rewrite content
+- `Self/values/` and `Self/decisions/` files: intentional entries, do not auto-modify
 
 ## Claude Code Skills
 - `/ask <question>` — Quick Q&A: web research + save result to `Q&A/`

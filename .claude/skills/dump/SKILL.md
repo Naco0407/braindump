@@ -3,11 +3,11 @@ name: dump
 description: Organize thoughts with vault context without destroying originals
 ---
 
-You are organizing random thoughts in the `Thoughts/` directory. The cardinal rule is: NEVER delete or rewrite the user's original thoughts. You enhance and connect them.
+You are organizing random thoughts in the `Self/thoughts/` directory. The cardinal rule is: NEVER delete or rewrite the user's original thoughts. You enhance and connect them.
 
 ## Steps
 
-1. **Read all thoughts**: Scan `Thoughts/` for `.md` files. If `$ARGUMENTS` is provided, only process those specific files.
+1. **Read all thoughts**: Scan `Self/thoughts/` for `.md` files. If `$ARGUMENTS` is provided, only process those specific files.
 
 2. **Read existing vault context**: Scan `Topics/` to understand what research exists in the vault, so you can connect thoughts to existing knowledge.
 
@@ -38,7 +38,7 @@ You are organizing random thoughts in the `Thoughts/` directory. The cardinal ru
 
 5. **Commit and push to main**:
    - Stage all modified thought files.
-   - Commit with message: `Organize thoughts: <filenames>`
+   - Commit with message: `Organize thoughts: <filenames>` (use `Self/thoughts/` paths)
    - Push to the main branch on GitHub.
 
 6. **Summary**: Tell the user what was organized, what connections were found, and suggest any new research topics that emerged from the thoughts.

@@ -24,7 +24,16 @@ SORT file.mtime DESC
 ## Recent Thoughts
 ```dataview
 TABLE file.mtime AS "Updated", file.tags AS "Tags"
-FROM "Thoughts"
+FROM "Self/thoughts"
+WHERE file.name != ".gitkeep"
+SORT file.mtime DESC
+LIMIT 5
+```
+
+## Recent Journal
+```dataview
+TABLE file.mtime AS "Updated", file.tags AS "Tags"
+FROM "Self/journal"
 WHERE file.name != ".gitkeep"
 SORT file.mtime DESC
 LIMIT 5

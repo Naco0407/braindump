@@ -4,6 +4,8 @@
 Personal research knowledge base managed with Obsidian and GitHub.
 Claude Code automates research workflows: planning, execution, and organization.
 
+**重要**: `Self/_self.md` にユーザーの自己プロファイルが記録されている。回答の深さ・スタイル・前提知識の調整に活用すること。
+
 ## Structure
 ```
 /

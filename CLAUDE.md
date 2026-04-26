@@ -24,6 +24,11 @@ Claude Code automates research workflows: planning, execution, and organization.
 ├── Templates/        # Obsidian templates for consistent formatting
 ├── Maps/             # Maps of Content (MOCs) linking related topics
 ├── Archive/          # Completed or paused research
+├── terrarium/        # Research Explorer — React + Three.js visualization app
+│   ├── src/
+│   │   ├── components/   # Globe, NetworkGraph, Bookshelf, Timeline
+│   │   └── data/         # Sample data (markers, nodes, books, events)
+│   └── package.json
 └── .claude/skills/  # Claude Code skills for automation
 ```
 
@@ -31,6 +36,10 @@ Claude Code automates research workflows: planning, execution, and organization.
 
 ### Natural Input (no slash command needed)
 When the user sends a word or short phrase without a slash command:
+
+**URLの場合** (e.g., `https://example.com/article`):
+- `/readinglist` と同じ動作を実行する（ReadingList/index.md の「読みたい」に追加）
+- 複数URLも同様に処理する
 
 **単語だけの場合** (e.g., "LLM", "量子コンピュータ", "RAG"):
 1. 意味を簡潔に説明する（会話で直接回答）
@@ -96,4 +105,5 @@ When the user sends a word or short phrase without a slash command:
 - `/deep-suggest [topics]` — Suggest additional research directions
 - `/dump [files]` — Organize thoughts with vault context
 - `/todo [task]` — Record and update todo items
+- `/readinglist <urls>` — Add URLs to the reading list
 

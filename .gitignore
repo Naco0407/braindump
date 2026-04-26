@@ -11,3 +11,9 @@ Thumbs.db
 
 # Trash
 .trash/
+
+# Node.js
+node_modules/
+dist/
+dist-ssr/
+*.local

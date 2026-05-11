@@ -1,10 +1,10 @@
 ---
 title: "人間の尊厳の哲学"
 created: "2026-05-08"
-status: planned
+status: active
 tags:
   - topic/human-dignity-philosophy
-  - status/planned
+  - status/active
 ---
 
 # 人間の尊厳の哲学
@@ -53,6 +53,45 @@ tags:
 
 ## Findings
 
+- **ブーバー（[[buber-i-and-thou]]）**：尊厳は I-Thou の相互的「出会い（Begegnung）」において関係的に生成される。「確証（Bestätigung）」の欠如——他者の客体化・道具化——が尊厳の傷つきの根本形態。「永遠の汝」としての神は関係論的尊厳の形而上学的基盤。
+
+- **アーレント（[[arendt-plurality-action]]）**：尊厳は複数性（plurality）・活動（action）・公的空間（public realm）への帰属を条件とする政治的概念。「権利をもつ権利」——政治的共同体への帰属権——がすべての権利の前提。全体主義は複数性を破壊することで尊厳を組織的に消滅させる。
+
+- **ロールズ（[[rawls-justice-dignity]]）**：尊厳は道徳的人格の二つの能力（正義感・善の構想）に根ざし、無知のヴェール下での合意から導かれる正義の二原理（平等な基本的自由＋差異原理）によって制度化される。カント的義務論の手続き的現代化。
+
+- **ホネット（[[honneth-recognition-theory]]）**：尊厳は愛（自己信頼）・法（自己尊重）・連帯（自己評価）という三形態の承認が累積的に機能することで成立する。各形態の「無視（misrecognition）」——虐待・法的排除・文化的侮辱——は特有の社会的病理を生む。
+
+- **ヌスバウム（[[nussbaum-capabilities]]）**：尊厳ある生を可能にする10の中核的ケイパビリティ（生命・身体的健康・身体的完全性・感覚/想像/思考・感情・実践理性・連帯・他の種・遊び・環境の制御）が「正義の最低限」として国家に義務づけられる。センとの差異：規範的リストと文化相対主義の明確な拒否。
+
+- **アガンベン（[[agamben-bare-life]]）**：「剥き出しの生（bare life）」は政治的生（bios）から排除されながら主権権力によって包摂される逆説的状態。ホモ・サケル——殺せるが犠牲に捧げられない——が近代政治の隠れた論理の顕現。収容所・難民キャンプ・緊急措置が例外状態の常態化を示す。
+
+- **比較・横断分析（[[comparative-analysis]]）**：
+  - 主要対立軸：内在的 vs. 関係的尊厳 / 手続き的 vs. 実質的正義 / 権利論 vs. 承認論 / 個人主義 vs. 関係主義 / 構築主義 vs. 解体主義
+  - AI・監視への応用：各理論から異なる批判的視角を提供（道具化批判・思考欠如・手続き的公正・承認の欠如・ケイパビリティ侵害・例外状態の常態化）
+  - 普遍性の問い：ロールズ・ヌスバウムは普遍主義、アーレント・アガンベンは普遍的人権言語の政治的限界を指摘。六者は相補的な層を形成する
+
 ## Related Topics
 
+- [[machine-learning]] — AI倫理・人間の道具化の問題
+- [[political-philosophy]] — 正義論・民主主義論との接続
+- [[surveillance-capitalism]] — デジタル監視とアガンベン/アーレントの応用
+
 ## Resources
+
+### Notes
+- [[buber-i-and-thou]] — ブーバーの I-Thou 理論と尊厳の関係論的基礎
+- [[arendt-plurality-action]] — アーレントの複数性・活動・全体主義批判
+- [[rawls-justice-dignity]] — ロールズの契約論的正義と道徳的平等
+- [[honneth-recognition-theory]] — ホネットの承認論：愛・法・連帯
+- [[nussbaum-capabilities]] — ヌスバウムの10の中核的ケイパビリティ
+- [[agamben-bare-life]] — アガンベンの剥き出しの生・ホモ・サケル
+- [[comparative-analysis]] — 横断比較：対立軸・AI応用・普遍性の問い
+
+### References
+- [[sep-arendt]] — SEP: Hannah Arendt
+- [[sep-rawls]] — SEP: John Rawls
+- [[sep-buber]] — SEP: Martin Buber
+- [[sep-capability-approach]] — SEP: The Capability Approach
+- [[iep-agamben]] — IEP: Giorgio Agamben
+- [[iep-recognition]] — IEP: Recognition, Social and Political
+- [[iep-human-dignity]] — IEP: Human Dignity
